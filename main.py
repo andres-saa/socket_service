@@ -38,7 +38,7 @@ manager = ConnectionManager()
 
 
 @app.websocket("/ws/{channel}")
-async def websocket_endpoint(websocket: WebSocket, channel: int):
+async def websocket_endpoint(websocket: WebSocket, channel: str):
     """
     Endpoint WebSocket:
     - El parámetro 'channel' identifica el canal de conexión (debe ser un número entero).
